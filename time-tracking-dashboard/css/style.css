@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik';
+    background-color:  hsl(226, 43%, 10%);
+}
+
+.outer-container{
+    width: 60%;
+    margin: 10% auto;
+}
+
+/* grid property */
+
+.inner-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+}
+.report-div{
+    background-color: hsl(235, 46%, 20%); 
+    border-radius: 12px ; 
+    grid-row-start:1;
+    grid-row-end: 3; 
+}
+
+/* grid property end */
+.name{
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.jeremy-img{
+    width: 60px;
+}
+
+.name h1{
+    font-weight: 300;
+    color: #fff;
+    padding-bottom: 20px;
+    /* width: 60%; */
+}
+
+.name p{
+    color: hsl(236, 100%, 87%);
+    font-size: 15px;
+    padding-top: 30px;
+    /* width: 60%; */
+}
+
+.update{
+    padding: 20px;
+    color: hsl(246, 80%, 60%);
+    line-height: 2;
+    /* width: 60%; */
+}
+
+.update p:hover{
+    color: #fff;
+}
+
+.work-font{
+    background-color: hsl(15, 100%, 70%);
+    overflow: hidden;
+    background-image: url(../images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-size:60px;
+    background-position: 90% 30%;
+    height:35px;
+    border-radius: 12px 12px 0 0;
+}
+
+.play-font{
+    background-color: hsl(195, 74%, 62%);
+    overflow: hidden;
+    background-image: url(../images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-size:60px;
+    background-position: 90% 30%;
+    height:35px;
+    border-radius: 12px 12px 0 0;
+}
+
+.study-font{
+    background-color:hsl(348, 100%, 68%);
+    overflow: hidden;
+    background-image: url(../images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-size:60px;
+    background-position: 90% 30%;
+    height:35px;
+    border-radius: 12px 12px 0 0;
+}
+
+.exercise-font{
+    background-color:hsl(145, 58%, 55%);
+    overflow: hidden;
+    background-image: url(../images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-size:60px;
+    background-position: 90% 30%;
+    height:35px;
+    border-radius: 12px 12px 0 0;
+}
+
+.social-font{
+    background-color: hsl(264, 64%, 52%);
+    overflow: hidden;
+    background-image: url(../images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-size:60px;
+    background-position: 90% 30%;
+    height:35px;
+    border-radius: 12px 12px 0 0;
+}
+
+.self-font{
+    background-color: hsl(43, 84%, 65%);
+    overflow: hidden;
+    background-image: url(../images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-size:60px;
+    background-position: 90% 30%;
+    height:35px;
+    border-radius: 12px 12px 0 0;
+}
+
+.details{
+    background-color: hsl(235, 46%, 20%);
+    padding: 20px;
+    position: relative;
+    height: 80%;
+    border-radius:0 0  12px 12px;
+}
+
+h6{
+    font-size: 16px;
+    color: #fff;
+}
+.ellipsis-img{
+    position: absolute;
+    top:25px;
+    right: 20px;
+}
+
+.details h2{
+    color: #fff;
+    font-weight: 300;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.details p{
+    color:hsl(236, 100%, 87%);
+    font-size: 12px ;
+}
+
+@media screen and (max-width: 480px) {
+    .inner-container{
+        grid-template-columns: 1fr;
+    }
+
+    .name{
+        display: flex;
+    }
+
+    .report-information h1{
+        font-size:x-large;
+    }
+
+    .profile{
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+
+    .update{
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    .details h2{
+        font-size: 35px;
+    }
+
+    .details p{
+        position: absolute;
+        right: 20px;
+        top: 65px;
+}
+}
